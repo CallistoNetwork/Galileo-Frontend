@@ -60,6 +60,7 @@ typings/
 # next.js build output
 .next
 
+.DS_Store
 
 src/server/public/stylus/
 src/server/public/main.*
