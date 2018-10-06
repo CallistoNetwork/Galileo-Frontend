@@ -59,3 +59,10 @@ typings/
 
 # next.js build output
 .next
+
+
+src/server/public/stylus/
+src/server/public/main.*
+src/server/public/vendor.*
+src/server/public/image
+manifest.json
