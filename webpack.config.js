@@ -79,7 +79,7 @@ module.exports = {
     ],
   },
   resolve: {
-    extensions: ['.js', '.jsx', 'styl'],
+    extensions: ['.js', '.jsx', '.styl'],
     modules: ['node_modules'],
     alias: { styles: path.resolve(__dirname, 'src/client/stylus/') },
   },
@@ -126,7 +126,7 @@ module.exports = {
     new ExtractTextPlugin('[name].css', { allChunks: true }),
     new CompressionPlugin({
       test: /\.js$|\.css$/,
-      asset: '[path].gz'
+      filename: '[path].gz'
     }),
     // new BundleAnalyzerPlugin(),
   ],

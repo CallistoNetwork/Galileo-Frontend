@@ -1,0 +1,60 @@
+.Header
+  background-color #FFF
+  padding 1rem 0
+  box-shadow 0 0 14px 0 rgba(198, 202, 206, 0.3)
+  &-content
+    display flex
+    justify-content space-between
+    align-items center
+  &-logo
+    &-figure
+      width 150px
+      img
+        width 100%
+  &-actions
+    display flex
+    align-items center
+    &-left
+      display grid
+      grid-templat-rows 1fr 1fr
+      justify-items flex-end
+      align-items center
+      margin-right 30px
+      grid-gap .5rem
+      &-btns
+        display grid
+        grid-template-columns 1fr 1fr 1fr 1fr
+        grid-gap 25px
+        align-items center
+        .btn
+          text-transform capitalize
+          line-height 1.41
+          padding 5px 40px
+    &-btn
+      line-height 1.41
+      color $dark-blue
+      padding 5px 15px
+      display block
+      border solid 1px #e5e5e5
+      border-radius 8px
+      text-decoration none
+  &-searchbar
+    position relative
+    &-input
+      width 480px
+      height 32px
+      padding 6px 45px 6px 15px
+      box-sizing border-box
+      font-size 14px
+      line-height 17
+      color $dark-blue
+      border solid 1px #E5E5E5
+      border-radius 8px
+      &:focus
+        outline none
+    &-icon
+      color #E5E5E5
+      position absolute
+      right 1rem
+      top 6px
+      font-size 18px

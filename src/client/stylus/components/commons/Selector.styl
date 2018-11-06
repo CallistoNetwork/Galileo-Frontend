@@ -1,0 +1,32 @@
+.Selector
+  position relative
+  &:hover
+    cursor pointer
+  &-selected
+    line-height 1.41
+    color $dark-blue
+    padding 5px 15px
+    display block
+    border solid 1px #e5e5e5
+    border-radius 8px
+    text-decoration none
+    display flex
+    align-items center
+    justify-content space-between
+  &-list
+    position absolute
+    width 100%
+    border solid 1px #e5e5e5
+    background-color #FFF
+    border-radius 8px
+    left 0
+    display grid
+    overflow hidden
+    &-elem
+      line-height 1.41
+      color $dark-blue
+      padding 5px 15px
+      display block
+      transition all 150ms ease
+      &:hover
+        background-color #f4f4f4
